@@ -1,0 +1,277 @@
+@import "define";
+@import "core";
+@import "compass";
+
+// フォントサイズは、PC合わせにする
+section {
+	position: relative;
+	width: 100%;
+	padding-top: percent-scale( 53px );
+
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.inner-contents {
+	width: percent-scale( 897px );
+	margin: 0 auto;
+}
+
+.link-button {
+	img {
+		&:last-child {
+			display: none;
+		}
+	}
+}
+
+h2 {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: percent-scale( 40px );
+
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+	padding-bottom: percent-scale( 20px );
+	width: percent-scale( 897px );
+
+	span {
+		width: 100%;
+		display: inline-block;
+		&:first-child {
+			@extend .font-en;
+			@include font-size( 36px );
+		}
+		&:last-child {
+			@extend .font-jp;
+			@include font-size( 16px );
+			margin-top: em( 11px );
+		}
+	}
+}
+
+h3 {
+	display: block;
+	text-align: center;
+
+	span {
+		@extend .font-jp;
+		@include font-size( 16px );
+		@include border-radius(5px);
+		display: inline-block;
+		background-color: #FFFFFF;
+		border-style: solid;
+		border-width: 2px;
+		padding: 0.5em;
+	}
+}
+
+#main-image {
+	padding-top: 0;
+}
+
+// #about-container
+// --------------------------------------------------------
+#about-container {
+	background-image: url( $image-path + "index/about-background.jpg" );
+	padding-bottom: percent-scale( 85px );
+	.contents {
+
+	}
+
+	h2 {
+		background-image: url( $image-path + "index/about-title-border.png" );
+	}
+	p {
+		@extend .font-jp;
+		@extend .white-glow;
+		@include font-size( 20px );
+		color: $font-color-dark-gray;
+		text-align: center;
+		margin-bottom: em( 40px );
+		line-height: 32px;
+		padding: 0 1em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.page-link {
+		text-align: center;
+		margin: 0 auto;
+		li {
+			text-align: center;
+			width: 50%;
+			@include inline-block();
+
+			a {
+				display: block;
+				width: percent-scale( 348px, $design-width/2 );
+				margin: 0 auto;
+			}
+		}
+
+		.facebook a {
+			@extend .link-button;
+		}
+		.contact a {
+			@extend .link-button;
+		}
+	}
+}
+
+// #lineup-container
+// --------------------------------------------------------
+
+#lineup-container {
+	background-image: url( $image-path + "index/lineup-background.jpg" );
+
+	h2 {
+		background-image: url( $image-path + "index/lineup-title-border.png" );
+	}
+
+	h3 {
+		span {
+			min-width: percent-scale( 100px, $design-width )!important;
+		}
+	}
+
+	#lineup-artists {
+		@extend .inner-contents;
+		h3 {
+			color: $font-color-orange;
+			border-right-color: $border-color-orange;
+		}
+	}
+
+	#lineup-shops {
+		@extend .inner-contents;
+		h3 {
+			color: $font-color-red;
+			border-right-color: $border-color-red;
+		}
+	}
+
+	#lineup-artists-list {
+		li {
+			display: block;
+			width: 50%;
+			@include inline-block();
+			text-align: center;
+
+			a {
+				display: block;
+			}
+		}
+	}
+
+	#lineup-shops-list {
+		li {
+			display: block;
+			width: 24%;
+			@include inline-block();
+			text-align: center;
+
+			a {
+				display: block;
+			}
+		}
+	}
+}
+
+
+// #access-container
+// --------------------------------------------------------
+#access-container {
+	background-image: url( $image-path + "index/access-background.jpg" );
+
+	h2 {
+		background-image: url( $image-path + "index/access-title-border.png" );
+	}
+
+	#access-map {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-top: 53%;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.image {
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#access-publictransports {
+		h3 {
+			color: $font-color-light-blue;
+			border-color: $border-color-light-blue;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	#access-car {
+		h3 {
+			color: $font-color-dark-blue;
+			border-color: $border-color-dark-blue;
+		}
+	}
+
+	#access-location {
+		h3 {
+			color: $font-color-green;
+			border-right-color: $border-color-green;
+		}
+
+		.image {
+			position: relative;
+			width: 900px;
+			height: 0;
+			padding-top: 53%;
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+// #tickets-container
+// --------------------------------------------------------
+#tickets-container {
+	background-image: url( $image-path + "index/tickets-background.jpg" );
+
+	h2 {
+		background-image: url( $image-path + "index/tickets-title-border.png" );
+	}
+
+	.infomation {
+		p {
+			@extend .black-glow;
+		}
+	}
+
+	#tickets-link a {
+		@extend .link-button;
+	}
+}

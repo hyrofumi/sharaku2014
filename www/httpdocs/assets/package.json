@@ -1,0 +1,17 @@
+{
+  "name": "asahi2014",
+  "version": "0.0.5",
+  "description": "asahi2014",
+  "main": "",
+  "repository": "",
+  "author": "htsukamoto",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-coffee": "~0.6.6",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-compass": "~0.2.0"
+  }
+}

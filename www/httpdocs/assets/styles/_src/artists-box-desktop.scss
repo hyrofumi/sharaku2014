@@ -1,0 +1,105 @@
+@import "define";
+@import "core";
+@import "compass";
+
+
+body#artists-box {
+	width: 760px;
+	height: 420px;
+	background-color: transparent;
+}
+
+#artists-box,#cboxLoadedContent {
+	footer {
+		display: none;
+	}
+}
+
+.inline-block {
+	@include inline-block();
+}
+
+// #artists-box-main-container
+// --------------------------------------------------------
+#artists-box-main-container {
+	width: 760px;
+	height: 420px;
+	background-image: url( $image-path + "index/lineup/background.png" );
+	@include border-radius(10px);
+
+	h1 {
+		background-image: url( $image-path + "index/lineup/title-border.png" );
+		background-repeat: repeat-x;
+		background-position: left bottom;
+		padding: 20px 18px;
+
+		span {
+			&:first-child {
+				@extend .font-en;
+				font-size: 20px;
+			}
+			&:last-child {
+				@extend .font-jp;
+				font-size: 14px;
+				margin-left: 10px;
+			}
+		}
+
+	}
+
+	#artists-box-container {
+		@include clearfix();
+	}
+
+
+	.image {
+		@extend .inline-block;
+		width: 380px;
+		height: 360px;
+		text-align: center;
+
+		p {
+			display: table;
+			width: 100%;
+			height: 100%;
+
+			span {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+	}
+	.text {
+		@extend .inline-block;
+		width: 350px;
+		color: #1a1a1a;
+
+		h2 {
+			@extend .font-jp;
+			font-size: 18px;
+			margin-bottom: 1em;
+			text-align: left;
+		}
+
+		a {
+			color: #1a1a1a;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.read-text {
+			@extend .font-jp;
+			font-size: 12px;
+			line-height: 1.5em;
+		}
+
+		.link-text {
+			@extend .font-jp;
+			font-size: 12px;
+			margin-top: 3em;
+		}
+	}
+}

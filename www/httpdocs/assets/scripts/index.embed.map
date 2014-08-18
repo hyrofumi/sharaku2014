@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "index.embed.js",
+  "sourceRoot": "_src/",
+  "sources": [
+    "embed.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,KAAA,MAAA;;CAAA,CAAE,CAAA,MAAE;CACH,GAAA,EAAA,mBAAA,uHAAA;CACA,KAAA,KAAA,EAAA,sJAAA;CAFC,EAAA;CAAF"
+}

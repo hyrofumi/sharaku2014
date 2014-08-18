@@ -1,0 +1,314 @@
+<?php
+	include( "../application.php" );
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=yes">
+	<meta name="keyword" content="しゃらく祭,sharakusai,fes,フェス,フェスティバル,祭,,音楽フェス,展示,千葉県,富津市,金谷,かなや,KANAYA,BASE,鋸山,のこぎり山,東京湾フェリー,海,山,絵,写真,音楽,映像,インスタレーション,演劇,料理,洒落">
+	<meta name="description" content="しゃらく祭｜2012.10.20(土)〜21(日) 、千葉県金谷の海と山を舞台に、第１回を開催予定。その概要は、未だ蓋(ふた)がされたまま…。Facebook、Twitterにて、少しずつ最新情報を発信中！">
+	<meta property="og:image" content="http://sharakusai.jp/share.jpg">
+	<title></title>
+	<link rel="canonical" href="http://sharakusai.jp/">
+	<link href="//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css">
+	<link href="./assets/styles/reset.min.css" rel="stylesheet">
+	<link href="./assets/styles/index.css" rel="stylesheet">
+	<link href="./assets/styles/index-<?php echo $device;?>.css" rel="stylesheet">
+	<link href="./assets/styles/colorbox.css" rel="stylesheet">
+</head>
+<body id="sharaku" data-device="<?php echo $device;?>">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=449700658407326";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="main-container">
+		<section id="main-image">
+			<p class="image"><img src="./assets/images/index/main-image.jpg"></p>
+			<div class="video">
+				<div class="logo">
+					<img id="video-logo" src="./assets/images/index/video-logo.png">
+					<img id="video-logo-text" src="./assets/images/index/video-logo-text.png">
+				</div>
+				<div class="date-place">
+					<img id="video-date" src="./assets/images/index/video-date.png">
+					<img id="video-place" src="./assets/images/index/video-place.png">
+				</div>
+				<video id="video-player" loop autoplay preload>
+					<source src='./assets/media/sharakusai_top.mp4' type='video/mp4;'></source>
+					<source src='./assets/media/sharakusai_top.webm'
+					></source>
+				</video>
+			</div>
+			<div class="share-link">
+				<ul>
+					<li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-text="しゃらく祭｜2012.10.20(土)〜21(日) 、千葉県金谷の海と山を舞台に、第１回を開催予定。その概要は、未だ蓋(ふた)がされたまま…。Facebook、Twitterにて、少しずつ最新情報を発信中！" data-count="none">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li><li class="facebook"><div class="fb-like" data-href="http://sharakusai.jp" data-send="false" data-layout="button_count" data-width="51" data-show-faces="false"></div></li>
+				</ul>
+			</div>
+		</section>
+		<!-- /#main-image -->
+
+		<nav id="main-nav">
+			<div id="main-nav-container">
+				<div id="main-nav-logo-container">
+					<div class="container">
+						<p class="logo"><img src="./assets/images/index/nav-logo.png" alt="しゃらく祭"></p>
+					</div>
+				</div>
+				<div id="main-nav-links-container">
+					<div class="container">
+						<ul id="main-nav-links">
+							<li class="main-nav-links-item">
+								<a href="#about-container">
+									<span>ABOUT</span><span>しゃらく祭とは</span>
+								</a>
+							</li><li class="main-nav-links-item">
+								<a href="#lineup-container">
+									<span>LINEUP</span><span>アーティスト/出店</span>
+								</a>
+							</li><li>
+								<a>
+									<span>TIMETABLE</span><span>タイムテーブル</span>
+								</a>
+							</li><li class="main-nav-links-item">
+								<a href="#access-container">
+									<span>ACCESS</span><span>アクセス</span>
+								</a>
+							</li><li class="main-nav-links-item">
+								<a href="#tickets-container">
+									<span>TICKETS</span><span>チケット</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- /#main-nav -->
+
+		<section id="about-container">
+			<div class="container">
+				<h2>
+					<img src="./assets/images/index/about-title.png" alt="ABOUT しゃらく祭とは">
+				</h2>
+				<div class="contents">
+					<p>
+						<span>しゃらく祭は、</span><span>特定の時期や開催地を設けない</span><span>キャラバン型の祭である。</span>
+					</p>
+
+					<p>
+						<span>その地に魅力を感じさえすれば、</span>
+						<span>都会でも、 田舎でも、 山でも、 海でも、</span><br>
+						<span>商店街でも、 空き地でも、 どこででも開催される。</span>
+					</p>
+
+					<p>
+						<span>ある日、 しゃらく祭は金谷という町と出会い、</span><br>
+						<span>のこぎり山の山中にある石切り場に心を奪われた。</span><br>
+						<span>そして、 この地を次なる祭の舞台に選んだ。</span>
+					</p>
+					<p>
+						<span>自然と人間の歴史が刻まれつづけた岩に、</span> <span>こだまする音の響き。</span>
+					</p>
+
+					<p>
+						<span>この地でしか聴けない音がある。</span>
+					</p>
+
+					<p>
+						<span>第二回しゃらく祭のテーマは、 この音の体験だ</span>。<br>
+						<span>ロマンチックな伝説が始まろうとしている。</span>
+					</p>
+				</div>
+				<div class="page-link">
+					<ul>
+						<li class="facebook">
+							<a href="https://www.facebook.com/sharakusai" target="_blank">
+								<img src="./assets/images/index/facebook-button.png" alt="facebook">
+								<img src="./assets/images/index/facebook-button-on.png" alt="facebook">
+							</a>
+						</li><li class="contact">
+							<a href="mailto:info@sharakusai.jp">
+								<img src="./assets/images/index/contact-button.png" alt="問い合わせ">
+								<img src="./assets/images/index/contact-button-on.png" alt="問い合わせ">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- /#about-container -->
+
+		<section id="lineup-container">
+			<div class="container">
+				<h2>
+					<img src="./assets/images/index/lineup-title.png" alt="LINEUP ">
+				</h2>
+				<div class="contents">
+					<div id="lineup-artists">
+						<h3><span>アーティスト</span></h3>
+						<ul id="lineup-artists-list">
+							<li><a href="./artists/artists-01.html"><img src="./assets/images/index/lineup/artists-01.png" alt="画家"></a></li><li><a href="./artists/artists-02.html"><img src="./assets/images/index/lineup/artists-02.png" alt="Loop Pool"></a></li><li><a href="./artists/artists-03.html"><img src="./assets/images/index/lineup/artists-03.png" alt="原田茶飯事"></a></li><li><a><img src="./assets/images/index/lineup/artists-comingsoon.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- /#lineup-artists -->
+
+					<div id="lineup-shops">
+						<h3><span>出店</span></h3>
+						<ul id="lineup-shops-list">
+							<li><a href="./shop/shop-01.html"><img src="./assets/images/index/lineup/shop-01.png" alt=""></a></li>
+							<li><a><img src="./assets/images/index/lineup/shop-comingsoon-01.png" alt=""></a></li>
+							<li><a><img src="./assets/images/index/lineup/shop-comingsoon-02.png" alt=""></a></li>
+							<li><a><img src="./assets/images/index/lineup/shop-comingsoon-03.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- /#lineup-shops -->
+				</div>
+			</div>
+		</section>
+		<!-- /#lineup-container -->
+
+		<section id="access-container">
+			<div class="container">
+				<h2>
+					<img src="./assets/images/index/access-title.png" alt="ACCESS アクセス">
+				</h2>
+				<div class="contents">
+					<div id="access-map">
+						<iframe src="https://mapsengine.google.com/map/embed?mid=zF20Lw1gFAxg.kusZv9EIFA30" width="640" height="480"></iframe>
+					</div>
+					<!-- /#access-map -->
+
+					<div id="access-publictransports">
+						<h3><span>公共交通機関でお越しの場合</span></h3>
+						<p class="access-notice">いずれも都内からは2時間程度。駅名をクリックすると、時刻表が表示されます。</p>
+						<p class="image"><a target="_blank" href="http://www.tokyowanferry.com/service/today.html"></a></p>
+						<ul class="notice">
+							<li>＊フェリーはご利用前に、運航状況のご確認をお願いします。</li>
+							<li>＊高速バスをご利用の際は、事前に予約が必要な場合がございます。</li>
+							<li>＊上総湊駅・木更津駅から浜金谷駅への電車は１時間あたり１本程度の運行ですので、ご注意ください。　予め時刻表をご確認の上、お乗り換えください。</li>
+						</ul>
+					</div>
+					<!-- /#access-publictransports -->
+					<div id="access-car">
+						<h3><span>お車でお越しの場合</span></h3>
+						<p class="image"></p>
+						<ul class="notice">
+							<li>＊お出かけ前に、道路状況のご確認をお願いします。</li>
+							<li>＊車でお越しの方は、金谷港有料駐車場(通常1日1回：¥600)か浜金谷駅前有料駐車場(通常1日1回：¥1,000)をご利用ください。<br>
+							浜金谷駅前有料駐車場をご利用の方は、浜金谷駅前の黒河釣具店に声をお掛けください。<br>
+							駐車スペースは上記の地図にてご確認の上、指定の場所への駐車にご協力をお願いします。</li>
+						</ul>
+					</div>
+					<!-- /#access-car -->
+
+					<p id="download-access" ><a href="./access.pdf" target="_blank">> アクセス図をダウンロード</a></p>
+
+					<div id="access-location">
+						<h3><span>開催地のご案内</span></h3>
+						<p class="image">
+							<iframe width="900" height="506" src="//www.youtube-nocookie.com/embed/MhzKOYIc0Fg?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</p>
+						<div class="text">
+							<p>
+								<span>山があって、海がある。</span><span>自然に恵まれた小さな港町「金谷」。</span><br>
+								<span>戦後、他に類を見ない勢いで高度経済成長を遂げた日本。 </span><span>かつて、ここ金谷は、その礎の一端を担った。</span><br>
+								<span>町を見守るようにそびえ立つ鋸山(のこぎりやま)からは、</span><span>つぎつぎに石材が切り出され、首都圏へ運び出された。</span><br>
+								<span>あれから長い年月が経った2014年秋。</span><br>
+								<span>石の採掘場は天然の音響ステージへと生まれ変わり、</span><span>いま再び、人々に満ち満ちた活気を与えるだろう。</span><br>
+							</p>
+						</div>
+					</div>
+					<!-- /#access-location -->
+				</div>
+			</div>
+		</section>
+		<!-- /#access-container -->
+
+		<section id="tickets-container">
+			<div class="container">
+				<h2>
+					<img src="./assets/images/index/tickets-title.png" alt="TICKETS チケット">
+				</h2>
+				<div class="contents">
+					<p id="tickets-link">
+						<a href="http://ptix.co/1sWsc5H" target="_blank">
+							<img src="./assets/images/index/tickets-button.png" alt="チケットお申し込みフォーム">
+							<img src="./assets/images/index/tickets-button-on.png" alt="チケットお申し込みフォーム">
+						</a>
+					</p>
+					<div class="infomation">
+						<p>
+							<span>しゃらく祭 前売チケットのお申込は</span><span>こちらから行ってください。</span><br>
+							<span>お申込完了時にお送りする返信メールをお読みになり、</span><span>指定の銀行口座へのお振込をお願いします。</span><br>
+							<span>なお、当日チケットは、</span><span>前売チケットの価格にプラス700円での販売となります。</span>
+						</p>
+						<p class="notice">
+							＊ 小学生以下、金谷在住の方は無料です。
+						</p>
+						<p class="alert-link"><a href="./notice.html" target="_blank">> 注意事項</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /#tickets-container -->
+
+		<footer>
+			<p id="copyright">&copy; 2014 Sharakusai. All Rights Reserved.</p>
+		</footer>
+
+	</div>
+	<!-- /#main-container -->
+	<div id="pagetop"><img src="./assets/images/shared/pagetop.png" alt="TOP"></div>
+<script src="./assets/scripts/libs/jquery-1.7.1.min.js"></script>
+<script src="./assets/scripts/libs/jquery.easing.1.3.js"></script>
+<?php if( $device == "sp" ) { ?>
+<script src="./assets/scripts/index.sp.nav.js"></script>
+<?php }else{ ?>
+<script src="./assets/scripts/libs/stickUp.min.js"></script>
+<script>
+	//initiating jQuery
+	jQuery(function($) {
+		$(document).ready( function() {
+			console.log("bbbb");
+			$('nav').stickUp({
+				parts: {
+					0: 'about-container'
+					, 1: 'lineup-container'
+					, 2: 'access-container'
+					, 3: 'tickets-container'
+				}
+				// , itemClass: 'main-nav-links-item'
+				, itemHover: 'active'
+		                        , topMargin: 'auto'
+			});
+		});
+	});
+</script>
+<script src="./assets/scripts/libs/jquery.colorbox-min.js"></script>
+<script src="./assets/scripts/index.flaotbox.js"></script>
+<script src="./assets/scripts/pagetop.js"></script>
+<script src="./assets/scripts/index.controller.js"></script>
+<?php } ?>
+<!-- <script src="./assets/scripts/index.nav.js"></script> -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34657767-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

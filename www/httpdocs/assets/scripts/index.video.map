@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "index.video.js",
+  "sourceRoot": "_src/",
+  "sources": [
+    "index.video.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,KAAA,MAAA;;CAAA,CAAE,CAAA,MAAE;CAAJ"
+}

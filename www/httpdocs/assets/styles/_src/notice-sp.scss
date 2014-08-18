@@ -1,0 +1,41 @@
+@import "define";
+@import "core";
+@import "compass";
+
+html,body {
+	height: 100%;
+}
+
+footer {
+	margin-top: percent-scale( 40px, $sp-design-width );
+	padding-bottom: percent-scale( 20px, $sp-design-width );
+	text-align: center;
+}
+
+h1 {
+	font-size: rem( 40px, $sp-base-font-size );
+	padding-bottom: 17px;
+}
+
+#notice-container {
+	width: 90%;
+	margin: percent-scale( 45px, $sp-design-width ) auto 0;
+
+	p {
+		font-size: rem( 24px, $sp-base-font-size );
+		line-height: 1.5em;
+		margin-bottom: percent-scale( 20px, $sp-design-width );
+		word-wrap: break-word;
+	}
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	span.title {
+		display: inline-block;
+		width: 100%;
+	}
+}

@@ -1,0 +1,33 @@
+@import "define";
+@import "core";
+@import "compass";
+
+html,body {
+	height: 100%;
+}
+
+body > #main-container {
+	height: auto;
+}
+#main-container {
+	background-image: url( $image-path + "shared/background.jpg" );
+	background-position: center top;
+	background-size: auto;
+	height: 100%;
+	padding-top: 20px;
+}
+
+h1 {
+	color: #d55d15;
+	text-align: center;
+	background-image: url( $image-path + "notice/title-border.png" );
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+#notice-container {
+	p, a {
+		color: #3d3c3c;
+	}
+}

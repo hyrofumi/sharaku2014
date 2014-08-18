@@ -1,0 +1,34 @@
+@import "define";
+@import "core";
+@import "compass";
+
+html,body {
+	height: 100%;
+}
+
+h1 {
+	font-size: 28px;
+	padding-bottom: 17px;
+}
+
+#notice-container {
+	width: 677px;
+	margin: 45px auto 0;
+
+	p {
+		font-size: 14px;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	span.title {
+		display: inline-block;
+		width: 100%;
+	}
+}

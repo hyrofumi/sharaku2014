@@ -1,0 +1,96 @@
+@import "define";
+@import "core";
+@import "compass";
+
+.inline-block {
+	@include inline-block();
+}
+
+footer {
+	margin-top: percent-scale( 40px, $sp-design-width );
+	padding-bottom: percent-scale( 20px, $sp-design-width );
+	text-align: center;
+}
+
+// #artists-box-main-container
+// --------------------------------------------------------
+#artists-box-main-container {
+	background-image: url( $image-path + "index/lineup/background.png" );
+
+	h1 {
+		background-image: url( $image-path + "index/lineup/title-border.png" );
+		background-repeat: repeat-x;
+		background-position: left bottom;
+		padding: percent-scale( 20px, $sp-design-width ) percent-scale( 30px, $sp-design-width );
+		text-align: center;
+
+		span {
+			&:first-child {
+				@extend .font-en;
+				font-size: rem( 40px, $sp-base-font-size );
+			}
+			&:last-child {
+				@extend .font-jp;
+				font-size: rem( 34px, $sp-base-font-size );
+				margin-left: percent-scale( 10px, $sp-design-width );
+			}
+		}
+
+	}
+
+	.image {
+		width: 100%;
+		text-align: center;
+		margin-top: percent-scale( 35px, $sp-design-width );
+		box-sizing: border-box;
+
+		p {
+			display: table;
+			width: 100%;
+			height: 100%;
+
+			span {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+		img {
+			width: 60%;
+		}
+
+	}
+	.text {
+		width: 100%;
+		color: #1a1a1a;
+		padding: percent-scale( 40px, $sp-design-width ) percent-scale( 50px, $sp-design-width );
+		box-sizing: border-box;
+
+		h2 {
+			@extend .font-jp;
+			font-size: 18px;
+			margin-bottom: 1em;
+			text-align: left;
+		}
+
+		a {
+			color: #1a1a1a;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.read-text {
+			@extend .font-jp;
+			font-size: rem( 24px, $sp-base-font-size );
+			line-height: 1.5em;
+		}
+
+		.link-text {
+			@extend .font-jp;
+			font-size: rem( 24px, $sp-base-font-size );
+			margin-top: 3em;
+		}
+	}
+}

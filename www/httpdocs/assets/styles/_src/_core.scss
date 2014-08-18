@@ -1,0 +1,80 @@
+@import "define";
+
+@font-face {
+	font-family: 'MavenProBold';
+	src: url(./MavenPro-Bold.ttf);
+}
+@font-face {
+	font-family: 'mplus-2c-medium';
+	src: url(./mplus-2c-medium.ttf);
+}
+
+.font-jp {
+	font-family: "mplus-2c-medium";
+}
+.font-en {
+	font-family: 'MavenProBold';
+}
+.white-glow {
+	// @include text-shadow(0, 0, 20px, #666666);
+	text-shadow: 0 0 10px #FFFFFF;
+}
+.black-glow {
+	// @include text-shadow(0, 0, 20px, #666666);
+	text-shadow: 0 0 20px #000000;
+}
+
+html {
+    font-size : 12px;
+}
+a {
+	outline: none;
+}
+@media screen and (min-width : 768px){
+    html{ font-size : 14px;}
+}
+@media screen and (min-width : 1024px) {
+    html{ font-size : 16px;}
+}
+
+body {
+	font-family: "メイリオ", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴ Pro W3", Osaka, "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+//function
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}
+
+@function percent-scale( $px, $base-width: $design-width ) {
+    @return percentage( $px / $base-width );
+}
+
+// mixin
+@mixin font-size( $size, $base: $base-font-size ) {
+	font-size: em($size, $base);
+}
+
+@mixin ease-out-quint($ms) {
+	-webkit-transition: all $ms +  ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: all $ms +  ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: all $ms +  ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-o-transition: all $ms +  ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: all $ms + ms cubic-bezier(0.230, 1.000, 0.320, 1.000); /* easeOutQuint */
+}
+
+@mixin ease-out-back($ms) {
+	-webkit-transition: all $ms + ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+	-webkit-transition: all $ms + ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-moz-transition: all $ms + ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-ms-transition: all $ms + ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-o-transition: all $ms + ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	transition: all $ms + ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
